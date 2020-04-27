@@ -1,5 +1,49 @@
 @import url(c:\Users\Federico\Programming\webdev\webDevProjects\todo-list\assets\css\sass\normalize.css);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600;700;800&display=swap");
 body {
-  background: #253345;
+  background-color: #E15EBD;
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+}
+
+.container {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header .title {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  letter-spacing: 0.1rem;
+}
+
+.box {
+  border: 1 px solid #c0c0c0;
+  border-radius: 0.5rem;
+  background-color: #FFFFFF;
+  position: absolute;
+}
+
+.box .title {
+  background-color: #41424A;
+  display: inline-block;
+  position: relative;
+  color: white;
+  top: -22px;
+  right: -3%;
+  text-transform: uppercase;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.2rem;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+
+.box .add-item {
+  position: relative;
+  display: inline-block;
+  top: 0;
+  right: 0;
 }
 /*# sourceMappingURL=main.css.map */
