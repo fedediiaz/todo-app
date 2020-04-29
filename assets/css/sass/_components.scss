@@ -1,0 +1,93 @@
+/*  list item  */
+.todo {
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0 0 0 4%;
+    }
+
+    &__item {
+        color: $dark-grey;
+        position: relative;
+        margin: auto 0;
+        padding: 6px 0;
+
+        & input {
+            // Delete checkbox
+            display: none;
+            margin: 0;
+
+            &:focus {
+                outline: 0;
+            }
+
+            &:checked {
+
+                // Style ckecked checkbox with animation.
+                &+label::before {
+                    content: "";
+                    animation: splash 0.6s ease forwards;
+                }
+
+                &+label::after {
+                    content: "";
+                    transition: all 150ms ease;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-color: $purple;
+                    background-image: $cb-tick-tur;
+                }
+            }
+
+            // Checkbox aspect 
+            &+label::before,
+            &+label::after {
+                content: "";
+                padding: 8px;
+                position: absolute;
+                background: white;
+                border: 1px solid $medium-grey;
+                left: 0;
+                top: 6px;
+                border-radius: 50%;
+            }
+
+            &+label {
+                display: block;
+                padding: 0 30px;
+
+                &:hover {
+                    cursor: pointer
+                }
+            }
+        }
+    }
+}
+
+/*  list item ends  */
+
+/* Add Item in box  */
+#add-item {
+    display: none;
+
+    &+label {
+        display: inline-block;
+        padding: 0 0 0 0px;
+        background: url("../img/icons/icons8-add-100.png") no-repeat;
+        height: 25px;
+        width: 25px;
+        background-size: 100%;
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
+
+    &:checked+label {
+        background: url("../img/icons/icons8-cancel-100-4.png") no-repeat;
+        height: 25px;
+        width: 25px;
+        display: inline-block;
+        background-size: 100%;
+    }
+}

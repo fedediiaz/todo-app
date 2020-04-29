@@ -2,30 +2,41 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>todo list</title>
-    <link rel="stylesheet" href="./assets/css/main.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>todo list</title>
+   <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <h1 class="title">my day</h1>
-        </header>
-        <main>
-            <section class="container todo box">
-                <h2 class="title">to do</h2>
-                <span class="add-item">O</span>
-                <ul>
-                    <li>thing to do</li>
-                    <li>thing to do</li>
-                    <li>thing to do</li>
-                </ul>
-            </section>
-        </main>
-    </div>
+   <div class="container">
+      <header>
+         <h1 class="title">my day</h1>
+      </header>
+      <main>
+         <section class="container todo box">
+            <h2 class="title">to do</h2>
+            <input type="checkbox" id="add-item">
+            <label for="add-item"></label>
+            <div class="add-item__btn">
+               <input type="text" class="add-item__input-text">
+            </div>
+            <ul class="todo__list">
+               <li class=todo__item>
+                  <input type="checkbox" id="item-1">
+                  <label for="item-1">Text goes here</label>
+               </li>
+               <li class=todo__item>
+                  <input type="checkbox" id="item-2">
+                  <label for="item-2">Text goes here</label>
+               </li>
+            </ul>
+         </section>
+      </main>
 
+      <script src="./assets/lib/jquery-3.5.0.min.js"></script>
+      <script src="./assets/js/script.js"></script>
+   </div>
 </body>
 
 </html>
