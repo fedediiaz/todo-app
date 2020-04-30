@@ -31,7 +31,7 @@ header {
   border-radius: 0.5rem;
   background-color: $white;
   position: relative;
-  padding: 1.8rem 0 0.3rem;
+  padding: 2rem 0 0.4rem;
 
   .title {
     display: inline-block;
@@ -48,16 +48,20 @@ header {
     @include soft-shadow;
   }
 
+  /*Input style start*/ 
   .add-item__btn {
-    margin-top: 5px;
-    padding: 20px;
-
-    & input {
-      display: none;
-      margin-top: 10px;
-      width: 65%;
-      height: 0px;
-      margin-left: 5%;
-    }
+    padding: 10px 10% 10px 4%;
+    
   }
+
+  .add-item__input-text {
+    width: 100%;
+  }
+
+  /*Input style ends*/
+}
+
+.hide {
+  height: 0px;
+  transition: height 500ms linear;
 }
