@@ -23,7 +23,6 @@ function getInputsIds() {
     return todoIds;
 }
 
-
 $(".field input").keypress(function (event) {
     if (event.which === 13) {
         let todoText = $(this).val();
@@ -35,8 +34,11 @@ $(".field input").keypress(function (event) {
             <input type="checkbox" id="item-${idNum}">
             <label for="item-${idNum}">${todoText}</label>
         </li>`);
-
     }
+});
+
+$(".todo__item span").click(function () {
+    $(this).parent().remove();
 });
 
 
