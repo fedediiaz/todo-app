@@ -153,6 +153,19 @@ summary {
   padding: 6px 0;
 }
 
+.todo__item span {
+  display: block;
+  background-image: url("/assets/img/icons/icons8-remove-100.png");
+  background-size: 0%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 10px;
+  margin: 0 auto;
+  position: absolute;
+  top: 6px;
+  left: 90%;
+}
+
 .todo__item input {
   display: none;
   margin: 0;
@@ -194,6 +207,7 @@ summary {
 .todo__item input + label {
   display: block;
   padding: 0 30px;
+  width: 80%;
 }
 
 .todo__item input + label:hover {
@@ -360,5 +374,14 @@ header .title {
   border-radius: 0.2rem;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+
+.hide {
+  background-size: 0%;
+}
+
+.task-done {
+  text-decoration: line-through;
+  color: #bfbfc0;
 }
 /*# sourceMappingURL=main.css.map */

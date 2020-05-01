@@ -33,13 +33,32 @@ $(".field input").keypress(function (event) {
         <li class="todo__item">
             <input type="checkbox" id="item-${idNum}">
             <label for="item-${idNum}">${todoText}</label>
+            <span></span>
         </li>`);
     }
 });
 
-$(".todo__item span").click(function () {
-    $(this).parent().remove();
+$(".todo__list").on("click", "span", function (event) {
+    $(this).parent().fadeOut(250, function () {
+        $(this).remove();
+    });
+    event.stopPropagation();
 });
+
+$(".todo__list").on("click", ".todo__item label", function () {
+    $(this).toggleClass("task-done");
+});
+
+$(".todo__list").on("mouseenter", ".todo__item", function () {
+    $(this).find("span").css("background-size", "100%");
+})
+
+$(".todo__list").on("mouseleave", ".todo__item", function () {
+    $(this).find("span").css("background-size", "0%");
+})
+
+
+
 
 
 

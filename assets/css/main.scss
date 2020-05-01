@@ -49,3 +49,12 @@ header {
   }
 
 }
+
+.hide {
+  background-size: 0%;
+}
+
+.task-done {
+  text-decoration: line-through;
+  color: $medium-grey;
+}

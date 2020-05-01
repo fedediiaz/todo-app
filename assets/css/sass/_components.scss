@@ -12,6 +12,20 @@
         margin: auto 0;
         padding: 6px 0;
 
+        & span {
+            display: block;
+            background-image: url("/assets/img/icons/icons8-remove-100.png");
+            background-size: 0%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            padding: 10px;
+            margin: 0 auto;
+            position: absolute;
+            top: 6px;
+            left: 90%;
+
+        }
+
         & input {
             // Delete checkbox
             display: none;
@@ -56,6 +70,7 @@
             &+label {
                 display: block;
                 padding: 0 30px;
+                width: 80%;
 
                 &:hover {
                     cursor: pointer
@@ -92,12 +107,12 @@
     }
 }
 
-/* Input Starts*/ 
+/* Input Starts*/
 
 .field {
     margin: 20px 4% 10px 4%;
     height: 50px;
-    width:90%;
+    width: 90%;
     position: relative;
     overflow: hidden;
 }
@@ -152,4 +167,4 @@
     transition: all 0.3s ease;
 }
 
-/* Input ends*/ 
+/* Input ends*/
