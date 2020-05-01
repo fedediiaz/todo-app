@@ -175,7 +175,7 @@ summary {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  background-color: #866efb;
+  background-color: #17D2D5;
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyBpZD0ibWFzdGVyLWFydGJvYXJkIiB2aWV3Qm94PSIwIDAgMTQwMCA5ODAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4PSIwcHgiIHk9IjBweCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTQwMCA5ODA7IiB3aWR0aD0iMTQwMHB4IiBoZWlnaHQ9Ijk4MHB4Ij48ZyB0cmFuc2Zvcm09Im1hdHJpeCg0MC44MzMzMzMzMzMzMzMzMzYsIDAsIDAsIDQwLjgzMzMzMzMzMzMzMzMzNiwgMjA5Ljk5OTk0ODYzMTE1OSwgLTAuMDAwMDA0Mzg2MTIzMjM3MDU0NTYyKSI+PHBhdGggZD0ibS44MjggMTMuMzM2Yy0uMjYxLjMwNC0uMzg4LjY5MS0uMzU3IDEuMDkxcy4yMTUuNzY0LjUyIDEuMDI0bDcuNDAzIDYuMzQ2Yy4yNzUuMjM1LjYxNi4zNjEuOTc0LjM2MS4wNDQgMCAuMDg5LS4wMDIuMTM0LS4wMDYuNDA1LS4wMzYuNzctLjIyOSAxLjAyOC0uNTQybDEyLjY2Mi0xNS40MTFjLjI1NC0uMzEuMzczLS43LjMzNC0xLjA5OS0uMDQtLjM5OS0uMjMxLS43NTktLjU0MS0xLjAxNGwtMi4zMTgtMS45MDRjLS42MzktLjUyNC0xLjU4NS0uNDMyLTIuMTExLjIwN2wtOS43NDUgMTEuODYxLTMuOTE2LTMuMzU1Yy0uNjI4LS41MzYtMS41NzYtLjQ2NS0yLjExNS4xNjN6IiBzdHlsZT0iZmlsbC1vcGFjaXR5OiAxOyBmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7Ii8+PC9nPjwvc3ZnPg==);
 }
 
@@ -226,14 +226,82 @@ summary {
   background-size: 100%;
 }
 
+/* Input Starts*/
+.field {
+  margin: 20px 4% 10px 4%;
+  height: 50px;
+  width: 90%;
+  position: relative;
+  overflow: hidden;
+}
+
+.field input {
+  width: 100%;
+  height: 100%;
+  padding-top: 22px;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.field input:focus + label span,
+.field input:valid + label span {
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  font-size: 0.8rem;
+  color: #E15EBD;
+}
+
+.field label {
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #17D2D5;
+}
+
+.field label::after {
+  content: "";
+  border-bottom: 2px solid #E15EBD;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  bottom: -1px;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.field input:focus + label::after,
+.field input:valid + label::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.field span {
+  position: absolute;
+  bottom: 2px;
+  left: 0px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* Input ends*/
+
 @-webkit-keyframes splash {
   40% {
-    background: #866efb;
-    -webkit-box-shadow: 0 -18px 0 -8px #866efb, 16px -8px 0 -8px #866efb, 16px 8px 0 -8px #866efb, 0 18px 0 -8px #866efb, -16px 8px 0 -8px #866efb, -16px -8px 0 -8px #866efb;
-            box-shadow: 0 -18px 0 -8px #866efb, 16px -8px 0 -8px #866efb, 16px 8px 0 -8px #866efb, 0 18px 0 -8px #866efb, -16px 8px 0 -8px #866efb, -16px -8px 0 -8px #866efb;
+    background: #17D2D5;
+    -webkit-box-shadow: 0 -18px 0 -8px #17D2D5, 16px -8px 0 -8px #17D2D5, 16px 8px 0 -8px #17D2D5, 0 18px 0 -8px #17D2D5, -16px 8px 0 -8px #17D2D5, -16px -8px 0 -8px #17D2D5;
+            box-shadow: 0 -18px 0 -8px #17D2D5, 16px -8px 0 -8px #17D2D5, 16px 8px 0 -8px #17D2D5, 0 18px 0 -8px #17D2D5, -16px 8px 0 -8px #17D2D5, -16px -8px 0 -8px #17D2D5;
   }
   100% {
-    background: #866efb;
+    background: #17D2D5;
     -webkit-box-shadow: 0 -36px 0 -10px transparent, 32px -16px 0 -10px transparent, 32px 16px 0 -10px transparent, 0 36px 0 -10px transparent, -32px 16px 0 -10px transparent, -32px -16px 0 -10px transparent;
             box-shadow: 0 -36px 0 -10px transparent, 32px -16px 0 -10px transparent, 32px 16px 0 -10px transparent, 0 36px 0 -10px transparent, -32px 16px 0 -10px transparent, -32px -16px 0 -10px transparent;
   }
@@ -241,12 +309,12 @@ summary {
 
 @keyframes splash {
   40% {
-    background: #866efb;
-    -webkit-box-shadow: 0 -18px 0 -8px #866efb, 16px -8px 0 -8px #866efb, 16px 8px 0 -8px #866efb, 0 18px 0 -8px #866efb, -16px 8px 0 -8px #866efb, -16px -8px 0 -8px #866efb;
-            box-shadow: 0 -18px 0 -8px #866efb, 16px -8px 0 -8px #866efb, 16px 8px 0 -8px #866efb, 0 18px 0 -8px #866efb, -16px 8px 0 -8px #866efb, -16px -8px 0 -8px #866efb;
+    background: #17D2D5;
+    -webkit-box-shadow: 0 -18px 0 -8px #17D2D5, 16px -8px 0 -8px #17D2D5, 16px 8px 0 -8px #17D2D5, 0 18px 0 -8px #17D2D5, -16px 8px 0 -8px #17D2D5, -16px -8px 0 -8px #17D2D5;
+            box-shadow: 0 -18px 0 -8px #17D2D5, 16px -8px 0 -8px #17D2D5, 16px 8px 0 -8px #17D2D5, 0 18px 0 -8px #17D2D5, -16px 8px 0 -8px #17D2D5, -16px -8px 0 -8px #17D2D5;
   }
   100% {
-    background: #866efb;
+    background: #17D2D5;
     -webkit-box-shadow: 0 -36px 0 -10px transparent, 32px -16px 0 -10px transparent, 32px 16px 0 -10px transparent, 0 36px 0 -10px transparent, -32px 16px 0 -10px transparent, -32px -16px 0 -10px transparent;
             box-shadow: 0 -36px 0 -10px transparent, 32px -16px 0 -10px transparent, 32px 16px 0 -10px transparent, 0 36px 0 -10px transparent, -32px 16px 0 -10px transparent, -32px -16px 0 -10px transparent;
   }
@@ -275,9 +343,7 @@ header .title {
   border-radius: 0.5rem;
   background-color: #FFFFFF;
   position: relative;
-  padding: 2rem 0 0.4rem;
-  /*Input style start*/
-  /*Input style ends*/
+  padding: 0.1rem 0;
 }
 
 .box .title {
@@ -294,19 +360,5 @@ header .title {
   border-radius: 0.2rem;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
-}
-
-.box .add-item__btn {
-  padding: 10px 10% 10px 4%;
-}
-
-.box .add-item__input-text {
-  width: 100%;
-}
-
-.hide {
-  height: 0px;
-  -webkit-transition: height 500ms linear;
-  transition: height 500ms linear;
 }
 /*# sourceMappingURL=main.css.map */

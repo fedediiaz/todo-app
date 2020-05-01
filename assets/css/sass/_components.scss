@@ -35,7 +35,7 @@
                     background-size: contain;
                     background-repeat: no-repeat;
                     background-position: center center;
-                    background-color: $purple;
+                    background-color: $turquoise;
                     background-image: $cb-tick-tur;
                 }
             }
@@ -91,3 +91,65 @@
         background-size: 100%;
     }
 }
+
+/* Input Starts*/ 
+
+.field {
+    margin: 20px 4% 10px 4%;
+    height: 50px;
+    width:90%;
+    position: relative;
+    overflow: hidden;
+}
+
+.field input {
+    width: 100%;
+    height: 100%;
+    padding-top: 22px;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.field input:focus+label span,
+.field input:valid+label span {
+    transform: translateY(-150%);
+    font-size: 0.8rem;
+    color: $pink
+}
+
+.field label {
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid $turquoise;
+}
+
+.field label::after {
+    content: "";
+    border-bottom: 2px solid $pink;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    bottom: -1px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.field input:focus+label::after,
+.field input:valid+label::after {
+    transform: translateX(0%);
+}
+
+.field span {
+    position: absolute;
+    bottom: 2px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+
+/* Input ends*/ 
