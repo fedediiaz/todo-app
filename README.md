@@ -1,3 +1,3 @@
 # todo-app
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/UkIGoV2"><a href="//imgur.com/a/UkIGoV2"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+![Preview](https://github.com/inju69/todo-app/blob/master/chrome-capture.gif)
